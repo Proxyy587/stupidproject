@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.navleft h1 {
+    font-size: 1.5em;
+}
+
+.navleft span {
+    color: #00ff00; /* Green glow for "XY" */
+}
+
+.navright ul {
+    list-style: none;
+    display: flex;
+}
+
+.navright li {
+    margin-right: 20px;
+}
+
+.navright a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+.navright a:hover{
+    color: #00ff00;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box {
+    background-color: #141414de;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    max-width: 500px; 
+    text-align: center;
+    margin: 10px;
+}
+.pfp{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    /* align-items: center; */
+}
+.pfp img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 35px;
+}
+
+.box h2{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 11rem;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.box h1{
+    font-size: 2em;
+    line-height: 1;
+}
+.box h3{
+    color: #ffffff5e;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+span {
+    color: #ff0000; /* Green color for "Underworld Mafia" */
+    font-weight: 500;
+    font-size: .9em;
+}
+
+
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+audio::-webkit-media-controls-panel {
+    border-radius: 10px;
+    border: none;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-play-button {
+    border: none;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+    border: none;
+}
+
+audio::-webkit-media-controls-timeline {
+    color: #fff;
+    background-color: #1b1b1b;
+    border: none;
+}
+
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    background-color: #fff;
+    border: none;
+}
+
+.main {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.particle {
+    position: absolute;
+    font-size: 20px;
+    opacity: 1;
+    animation: fall 4s ease infinite;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(40vh);
+        opacity: 0;
+    }
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333; /* Background color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners for the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Color of the scrollbar handle on hover */
+  }
+.donation{
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+}  
+
+/* style.css */
+.valentine-image {
+    height: 200px;
+}
+
+.valentine-question {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.yes-button,
+.no-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.yes-button:hover {
+    background-color: #45a049;
+}
+
+.no-button:hover {
+    background-color: #f44336;
+}
+.sociallyidk{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.work{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.work:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutidk{
+    margin: 15px;
+}
+.letter{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c4c2c2;
+}
+.gallery img {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    margin: 10px; /* Adjust the margin as needed */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    
+}
+
+.work>a:hover{
+    color: #fff;
+}
+.work>a {
+    /* Add styles for social icons if needed */
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
